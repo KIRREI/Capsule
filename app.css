@@ -83,12 +83,14 @@ font-family: Proxima Nova;
     display: none!important;
 }
 
-
+.herored__margin {
+    margin-top: 15% !important;
+}
 .page-loading_start {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 9.5px!important;
+    font-size: 7.5px!important;
     letter-spacing: 5px!important;
     font-weight: 500!important;
     cursor: pointer;
@@ -120,6 +122,16 @@ font-family: Proxima Nova;
     width: var(--size-w)
 }
 
+.options-loader {
+    padding-left: 0.1rem ;
+    margin-bottom: 1.875rem;
+    font-size: 1.2rem !important;
+    line-height: 180%;
+    display: block;
+    font-family: var(--primary-font) !important;
+    font-style: normal;
+}
+
 #page-loading_circle {
     stroke-dasharray: 829;
     stroke-dashoffset: 120;
@@ -137,6 +149,27 @@ font-family: Proxima Nova;
     transition: 1s;
 }
 
+.story__red {
+    margin-bottom: 0rem !important;
+    margin-top: 0rem !important;
+    height: 64rem;
+    width: max-content;
+    margin-left: -18rem;
+    margin-top: 17rem;
+
+}
+
+.story_pad {
+    margin-bottom: 0rem !important;
+    margin-top: 0rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.font-AG {
+    font-family: Avant Garde,sans-serif,serif !important;
+}
+
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -152,12 +185,26 @@ font-family: Proxima Nova;
     transition: 1s;
 }
 
+.lowercase {
+    text-transform: capitalize !important;
+}
+
+.skills_vh_red {
+    margin-bottom: 0rem !important;
+    padding-bottom: 37.32vh !important;
+}
+
+.mywork__red__width {
+    max-width: 100% !important;
+    line-height: 106% !important;
+}
+
 .page-loading_inner:hover circle {
     stroke: #ef523d !important;
     transition: 1s;
 }
 
-.page-loading_inner:hover .body-text {
+.page-loading_inner:hover .options-loader {
     color: #ef523d !important;
     transition: 1s;
 }
@@ -1420,7 +1467,7 @@ font-family: Proxima Nova;
 
 .line1 {
     border: 0;
-    width: 75%;
+    width: 105%;
     padding-bottom: 8rem;
     padding-top: 0rem;
     border-top: 0.5px solid;
@@ -1431,7 +1478,7 @@ font-family: Proxima Nova;
 
 .line2 {
     border: 0;
-    width: 75%;
+    width: 105%;
     padding-bottom: 3.5rem;
     padding-top: 4rem;
     border-top: 0.5px solid;
@@ -1442,7 +1489,7 @@ font-family: Proxima Nova;
 
 .line3 {
     border: 0;
-    width: 75%;
+    width: 105%;
     padding-bottom: 5rem;
     padding-top: 3rem;
     border-top: 0.5px solid;
@@ -4765,6 +4812,28 @@ b {
     pointer-events: none
 }
 
+.IDOTHIS__red__disable {
+    pointer-events: auto;
+}
+
+.red__height_skills {
+    height: 15rem !important;
+}
+
+.border_none_red {
+    border-top: 0px solid hsla(37,18%,66%,.15) !important;
+}
+
+.red__height_work {
+    height: 19rem !important;
+}
+
+@media(any-hover: hover) {
+    .IDOTHIS__red__disable {
+        opacity:100 ;
+    }
+}
+
 @media(any-hover: hover) {
     .op-0 {
         opacity:0
@@ -4821,7 +4890,7 @@ b {
 .space-height {
     font-size: 5rem;
     letter-spacing: -.05em;
-    line-height: 95%;
+    line-height: 89%;
     text-transform: uppercase
 }
 
@@ -5233,10 +5302,6 @@ b {
         width: 40% !important;
     }
 
-    /*.three-masking {*/
-    /*    width: 35rem !important;*/
-    /*}*/
-
 
     .top-three-list {
         top: -0.7rem !important;
@@ -5614,11 +5679,6 @@ b {
         flex-wrap: nowrap;
     }
 
-
-    /*.row>* {*/
-    /*    width: 83% !important;*/
-    /*}*/
-
     .i-do-this-margin-title {
         margin-top: -O.125rem !important;
         margin-bottom: 1.875rem !important;
@@ -5725,12 +5785,6 @@ b {
     }
 
 }
-/*@media(min-width: 768px) {*/
-/*    .font-testeur*/
-/*    display: none;*/
-/*    letter-spacing: 3rem !important;*/
-/*}*/
-/*}*/
 
 /*Version mobile petite*/
 @media(min-width: 320px)and (max-width:424px) {
@@ -6454,14 +6508,26 @@ p {
 }
 
 .body-text {
-    letter-spacing: .4em;
-    font-size: 22px!important;
-    margin-bottom: 1.875rem
+    letter-spacing: .6em;
+    font-size: 16px!important;
+    margin-bottom: 2.3rem
 }
 
 .body-text,.sub-content {
     font-size: .875rem;
     line-height: 180%
+}
+
+.email-and-kirei {
+    margin-left: -0.3rem !important;
+}
+
+.margin-mail-global{
+    margin-left: -0.2rem;
+}
+
+.padd-left-mail {
+    padding-left: 0.925rem !important;
 }
 
 .gmail {
@@ -6508,8 +6574,8 @@ p {
 
 @media(min-width: 1200px) {
     .size-ludw {
-        color: white;
-        font-size:1.1rem
+        color: #b7ab98;
+        font-size:1rem
     }
 }
 
@@ -6692,7 +6758,7 @@ canvas.three-app {
 
 
 .layer__red {
-    --size: 40px!important;
+    --size: 80px!important;
     background: #ef523d;
     left: 0;
     -webkit-mask-image: url(assets/icons/test-mask.svg);
@@ -6717,6 +6783,14 @@ canvas.three-app {
     /* top: -5px; */
 }
 
+.text-noire {
+    color: #000000!important;
+}
+
+.mystory-rowexperience{
+    --pr-height: 953.4375px !important;
+}
+
 .header {
     --top: 1.25rem;
     --color: #ef523d;
@@ -6729,6 +6803,30 @@ canvas.three-app {
     top: 0;
     width: 100%;
     z-index: 9
+}
+
+.margin-kirei_red {
+    margin-bottom: 3.6rem !important;
+}
+.multy-hero_red{
+    margin-left: 10.2%;
+    width: 85rem !important;
+    height: 7rem;
+    word-spacing: 1.53rem;
+    line-height: 7.2rem;
+}
+
+.designer-hero_red{
+    margin-left: 2.88rem;
+    margin-top: 0.75rem;
+    padding-left: 16rem;
+    line-height: 7.55rem;
+    width: 85rem !important;
+    height: 7rem;
+}
+
+.hero-top-red{
+    top:0rem ;
 }
 
 @media(any-hover: hover) {
@@ -7412,8 +7510,8 @@ canvas.three-app {
 
 @media(min-width: 768px) {
     .about_text {
-        max-width: 85%;
-        font-size: 4rem;
+        max-width: 100%;
+        font-size: 4.5rem;
     }
 }
 
@@ -7518,6 +7616,7 @@ canvas.three-app {
         font-size: 0.775rem !important;
     }
 
+
     .about {
         --size-canvas: 58.875rem
     }
@@ -7596,9 +7695,22 @@ canvas.three-app {
     max-width: 100%;
 }
 
+.font_about_red {
+    font-size: 4.5rem !important;
+}
+
 @media(min-width: 768px) {
     .width_about_red {
         width: 100% !important;
+    }
+
+    .max_width_about_red {
+        max-width: 106% !important;
+        width: 106% !important;
+    }
+
+    .line_height_about_red {
+        line-height: 105% !important;
     }
 }
 
@@ -7641,6 +7753,14 @@ canvas.three-app {
 .about__red .heading-mask {
     padding-bottom: 1rem;
     padding-top: 1rem
+}
+
+.line__red__IDOTHIS {
+    height: 7.65rem !important;
+}
+
+.story__red__width {
+    width: 72rem !important;
 }
 
 
@@ -7715,7 +7835,7 @@ canvas.three-app {
 @media(min-width: 1200px) {
     .work_content_desc {
         width: 100%;
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 }
 
@@ -7851,6 +7971,17 @@ canvas.three-app {
     padding-top: 1.5rem
 }
 
+.padding_red_none {
+    height: 52.8rem !important;
+    padding-top: 0rem !important;
+}
+
+@media(min-width: 768px) {
+    .client_info_red {
+        margin-bottom:30.261905vh !important;
+    }
+}
+
 @media(min-width: 768px) {
     .client_info {
         margin-bottom:29.7619047619vh;
@@ -7888,8 +8019,8 @@ canvas.three-app {
 
 @media(min-width: 1200px) {
     .client_content_desc {
-        max-width: 90%;
-        font-size: 4rem;
+        max-width: 100%;
+        font-size: 4.5rem;
     }
     .is-touch .client_list_3d_image img{
         display: none;
@@ -8189,7 +8320,7 @@ canvas.three-app {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: 100%
+    width: 80%
 }
 
 .videoPlayer_inner__red {
@@ -8656,10 +8787,24 @@ span.icon {
     display: inline-block
 }
 
+@media(min-width: 325px) and (max-width: 768px) {
+    .display-none-mobile {
+        display: none !important;
+    }
+}
+
+@media(min-width: 768px) {
+    .display-none-desktop {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
 .testimonial_content {
     margin-bottom: 1.875rem;
     margin-left: -1em;
     position: relative
+    }
 }
 
 @media(min-width: 768px) {
@@ -8669,25 +8814,35 @@ span.icon {
 }
 
 .testimonial_content .line {
-    padding-left: 1em
+    padding-left: 2.5em
 }
 
+@media(min-width: 1200px){
 .testimonial_content b {
     color: #ef523d;
     display: block;
-    font-size: 7.5rem;
+    font-size: 5.5rem;
     left: 0;
     letter-spacing: -.05em;
     line-height: 84%;
     margin-left: -.05em;
     text-transform: uppercase;
     top: 0
+      }
+}
+
+@media(min-width: 1200px){
+.font-last {
+    width: 50rem !important;
+    max-width: 200rem !important;
+    font-size: 4.5rem !important;
+           }
 }
 
 @media(min-width: 1200px) {
     .testimonial_content b {
         display:inherit;
-        font-size: 8.75rem;
+        font-size: 15.75rem;
         margin-left: 0;
         position: absolute!important
     }
@@ -8832,7 +8987,7 @@ span.icon {
 
 @media(min-width: 768px) {
     .motto_content_inner {
-        padding-bottom: 15px;
+        padding-bottom: 0;
         height:30.375rem
     }
 }
@@ -8857,13 +9012,13 @@ padding-top: 1.25rem;
         font-size: 15px;
     }
 }
+
 @media(main-width: 320px) {
     .motto_content_heading {
         font-size: 65px;
-
-
     }
 }
+
 @media(min-width: 768px) {
     .motto_content_heading {
         padding-top:2.1875rem;
@@ -8873,10 +9028,8 @@ padding-top: 1.25rem;
 
     @media(min-width: 768px) {
         .line_height_padding {
-            padding-top:5.3875rem;
-            padding-bottom: 3rem
-            line-height: 90%;
-            letter-spacing: 1px;
+            padding-top:3rem;
+            padding-bottom: 3rem;
         }
 
         .gridding{
@@ -9579,8 +9732,9 @@ padding-top: 1.25rem;
 
     @media(min-width: 1100px) {
         .font-less {
-            width: 60rem;
-            font-size: 10.1rem;
+            letter-spacing: -7px !important;
+            width: 68rem;
+            font-size: 8.8rem;
             letter-spacing: 2rem;
         }
     }
@@ -9597,7 +9751,20 @@ padding-top: 1.25rem;
         font-size: 1.4rem;
     }
     .heading{
-        line-height: 6.1rem;
+        line-height: 6rem;
+    }
+    .line-height-header {
+        word-spacing: -1.8rem !important;
+        margin-bottom: -1rem !important;
+        margin-top: -1rem !important;
+    }
+    .margin-multy {
+        padding-bottom: 3rem !important;
+    }
+    .kirei {
+        font-size: 17px !important;
+        letter-spacing: 6px !important;
+        margin-bottom: -1px !important;
     }
 }
 
@@ -12919,14 +13086,15 @@ p {
 }
 
 .space-know {
+    font-size: 1.13rem !important;
     margin-bottom: 0;
-    color: white;
-    letter-spacing: 7px;
+    color: #b7ab98;
+    letter-spacing: 0.5em;
 }
 
 .space-ludwig {
-    margin-top: 80px;
-    letter-spacing: 8px;
+    margin-top: 2px;
+    letter-spacing: 0.12em;
 }
 
 pre {
@@ -13216,7 +13384,7 @@ display: none;
     top: -5px;
 }
 .above_heading{
-    color: #fff;
+    color: #b7ab98;
     font-size: 20px;
 
 }

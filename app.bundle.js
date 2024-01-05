@@ -1,3 +1,11 @@
+const headingElements = document.querySelectorAll('.heading-mask');
+
+headingElements.forEach(function(element) {
+    element.addEventListener('click', function() {
+        this.classList.toggle('is-hover');
+    });
+});
+
 (()=>{
         var t, e = {
             5267: (t,e,i)=>{
@@ -5234,7 +5242,7 @@
                         key: "addLighting",
                         value: function(t) {
                             var e = new ii.Ox3(16777215,10);
-                            e.position.set(3, 9, 3.5),
+                            e.position.set(5.5, 4, 3.5),
                                 t.add(e),
                                 t.environment = vi.neutralEnvironment
                         }
