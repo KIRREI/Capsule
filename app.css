@@ -6755,10 +6755,8 @@ canvas.three-app {
     bottom: 0rem !important;
 }
 
-
-
 .layer__red {
-    --size: 80px!important;
+    --size: 80px;
     background: #ef523d;
     left: 0;
     -webkit-mask-image: url(assets/icons/test-mask.svg);
@@ -6775,13 +6773,28 @@ canvas.three-app {
     pointer-events: none;
     position: absolute;
     top: 0;
-    z-index: 5
+    z-index: 5;
+    opacity: 1;
+    transition: mask-size 0.5s ease-in-out;
 }
+
+.layer__red_on_is_hover {
+    mask-size: 0,contain;
+    transition: mask-size 0.2s ease-in-out;
+}
+
+.layer__red_on_text_dark {
+    mask-size: 110px,contain;
+    transition: mask-size 0.3s ease-in-out;
+}
+
 /*}*/
 .text-dark {
     color: #000000!important;
     /* top: -5px; */
 }
+
+.scale-cursor {}
 
 .text-noire {
     color: #000000!important;

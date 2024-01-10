@@ -1,10 +1,36 @@
 const headingElements = document.querySelectorAll('.heading-mask');
+const textDarkElements = document.querySelectorAll('.scale-cursor');
+const layerRedElement = document.querySelector('.layer__red');
 
 headingElements.forEach(function(element) {
-    element.addEventListener('click', function() {
-        this.classList.toggle('is-hover');
+    element.addEventListener('click', () => {
+        element.classList.toggle('is-hover');
+    });
+
+    element.addEventListener('mouseenter', () => {
+        element.classList.add('is-hover');
+        console.log('enter')
+
+        layerRedElement.classList.add('layer__red_on_is_hover');
+    });
+
+    element.addEventListener('mouseleave', () => {
+        element.classList.remove('is-hover');
+
+        layerRedElement.classList.remove('layer__red_on_is_hover');
     });
 });
+
+textDarkElements.forEach((element) => {
+    element.addEventListener('mouseenter', () => {
+        layerRedElement.classList.add('layer__red_on_text_dark');
+    });
+
+    element.addEventListener('mouseleave', () => {
+        layerRedElement.classList.remove('layer__red_on_text_dark');
+    });
+});
+
 
 (()=>{
         var t, e = {
@@ -2601,19 +2627,16 @@ headingElements.forEach(function(element) {
                         key: "onEnter",
                         value: function() {
                             this.funs.onHover();
-                            this.DOM.parent && this.DOM.parent.classList.add("is-hover");
                         }
                     }, {
                         key: "onLeave",
                         value: function() {
                             this.funs.onLeave();
-                            this.DOM.parent && this.DOM.parent.classList.remove("is-hover");
                         }
                     }, {
                         key: "onClick",
                         value: function() {
                             this.funs.onClick(); // Execute the onClick callback function
-                            this.DOM.parent && this.DOM.parent.classList.add("is-hover");
                         }
                     }, {
                         key: "clear",
@@ -5434,7 +5457,7 @@ headingElements.forEach(function(element) {
                     }(o, t);
                     var e, i, n, r = Ui(o);
                     function o(t) {
-                        var e, i = t.el, n = t.url, s = void 0 === n ? "assets/glb/globe.gltf" : n, a = t.onLoaded, l = void 0 === a ? null : a;
+                        var e, i = t.el, n = t.url, s = void 0 === n ? "assets/glb/maps.gltf" : n, a = t.onLoaded, l = void 0 === a ? null : a;
                         return function(t, e) {
                             if (!(t instanceof e))
                                 throw new TypeError("Cannot call a class as a function")
