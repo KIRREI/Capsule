@@ -1,5 +1,4 @@
 const headingElements = document.querySelectorAll('.heading-mask');
-const textDarkElements = document.querySelectorAll('.scale-cursor');
 const layerRedElement = document.querySelector('.layer__red');
 
 headingElements.forEach(function(element) {
@@ -18,16 +17,6 @@ headingElements.forEach(function(element) {
         element.classList.remove('is-hover');
 
         layerRedElement.classList.remove('layer__red_on_is_hover');
-    });
-});
-
-textDarkElements.forEach((element) => {
-    element.addEventListener('mouseenter', () => {
-        layerRedElement.classList.add('layer__red_on_text_dark');
-    });
-
-    element.addEventListener('mouseleave', () => {
-        layerRedElement.classList.remove('layer__red_on_text_dark');
     });
 });
 
@@ -5407,7 +5396,7 @@ textDarkElements.forEach((element) => {
                     }(o, t);
                     var e, i, n, r = Ui(o);
                     function o(t) {
-                        var e, i = t.el, n = t.url, s = void 0 === n ? "assets/glb/maps.gltf" : n, a = t.onLoaded, l = void 0 === a ? null : a;
+                        var e, i = t.el, n = t.url, s = void 0 === n ? "assets/glb/mapteste.gltf" : n, a = t.onLoaded, l = void 0 === a ? null : a;
                         return function(t, e) {
                             if (!(t instanceof e))
                                 throw new TypeError("Cannot call a class as a function")
@@ -5448,13 +5437,16 @@ textDarkElements.forEach((element) => {
                     }, {
                         key: "addLighting",
                         value: function(t) {
-                            var e = new ii.Ox3(16777215,12);
-                            e.position.set(1, .08, -.05),
+                            var e = new ii.Ox3(16777215,8.5);
+                            e.position.set(-300,150, -30),
                                 t.add(e);
-                            var i = new ii.ybr(855309,0,3);
+                            var e = new ii.Ox3(16777215,5);
+                            e.position.set(90,-30, 20),
+                                t.add(e);
+                            var i = new ii.ybr(855309,35,-30);
                             t.fog = i,
                                 t.environment = vi.neutralEnvironment;
-                            var n = new ii.Mig(16777215,20);
+                            var n = new ii.Mig(16777215,10);
                             t.add(n)
                         }
                     }]) && Vi(e.prototype, i),
