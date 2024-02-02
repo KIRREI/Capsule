@@ -6756,36 +6756,29 @@ canvas.three-app {
 }
 
 .layer__red {
-    --size: 80px;
-    background: #ef523d;
+    --size: 0px;
+    background: #eb5939;
     left: 0;
     -webkit-mask-image: url(assets/icons/test-mask.svg);
     mask-image: url(assets/icons/test-mask.svg);
     -webkit-mask-origin: content-box;
     mask-origin: content-box;
-    -webkit-mask-position: calc(var(--x) - var(--size)/2) calc(var(--y) - var(--size)/2),center;
-    mask-position: calc(var(--x) - var(--size)/2) calc(var(--y) - var(--size)/2),center;
+    -webkit-mask-position: calc(var(--x) - var(--size)/2) calc(var(--y) - var(--size)/2), center;
+    mask-position: calc(var(--x) - var(--size)/2) calc(var(--y) - var(--size)/2), center;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
-    -webkit-mask-size: var(--size),contain;
-    mask-size: var(--size),contain;
+    -webkit-mask-size: var(--size), contain;
+    mask-size: var(--size), contain;
     min-height: 100%;
     pointer-events: none;
     position: absolute;
     top: 0;
-    z-index: 5;
-    opacity: 1;
-    transition: mask-size 0.5s ease-in-out;
+    z-index: 5
 }
 
 .layer__red_on_is_hover {
     mask-size: 0,contain;
     transition: mask-size 0.2s ease-in-out;
-}
-
-.layer__red_on_text_dark {
-    mask-size: 110px,contain;
-    transition: mask-size 0.3s ease-in-out;
 }
 
 /*}*/

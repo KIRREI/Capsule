@@ -2689,18 +2689,14 @@ textDarkElements.forEach((element) => {
                 }
                 var be = function() {
                     function t() {
-                        !function(t, e) {
-                            if (!(t instanceof e))
-                                throw new TypeError("Cannot call a class as a function")
-                        }(this, t),
-                            this.DOM = {
-                                main: document.querySelector(".js-masker")
-                            },
-                            this.DOM.btnClip = document.getElementById("js-btn_clipPath"),
-                            this.raf = null;
-                        var e = Z.mouse
-                            , i = e.x
-                            , n = e.y;
+                        ! function(t, e) {
+                            if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
+                        }(this, t), this.DOM = {
+                            main: document.querySelector(".js-masker")
+                        }, this.DOM.btnClip = document.getElementById("js-btn_clipPath"), this.raf = null;
+                        var e = Z.mouse,
+                            i = e.x,
+                            n = e.y;
                         this.cursor = {
                             current: {
                                 x: i,
@@ -2711,230 +2707,184 @@ textDarkElements.forEach((element) => {
                                 y: n
                             },
                             value: 0,
-                            scroll: 0,
-                        },
-                            this.timeHolde = null,
-                            this.isReady = !1,
-                            this.isEnterExpend = !1,
-                            this.render = this.render.bind(this),
-                            this.onHold = this.onHold.bind(this),
-                            this.sizeMask(),
-                            Z.isTouchDevice ? this.initTouch() : this.initPc(),
-                            this.bindEvent()
+                            scroll: 0
+                        }, this.timeHolde = null, this.isReady = !1, this.isEnterExpend = !1, this.render = this.render.bind(this), this.onHold = this.onHold.bind(this), this.sizeMask(), Z.isTouchDevice ? this.initTouch() : this.initPc(), this.bindEvent()
                     }
                     var e, i, n;
-                    return e = t,
-                        i = [{
-                            key: "initTouch",
-                            value: function() {}
-                        }, {
-                            key: "initPc",
-                            value: function() {
-                                var t = this;
-                                ot.p8.ticker.add(this.render),
-                                    document.querySelectorAll(".js-cursor-extend").forEach((function(e) {
-                                            new de({
-                                                el: e,
-                                                onHover: t.onEnterExtend.bind(t),
-                                                onLeave: t.onLeave.bind(t)
-                                            })
-                                        }
-                                    )),
-                                    document.querySelectorAll(".js-cursor-contract").forEach((function(e) {
-                                            new de({
-                                                el: e,
-                                                onHover: t.onEnterContract.bind(t),
-                                                onLeave: t.onLeave.bind(t)
-                                            })
-                                        }
-                                    ));
-                                var e = document.querySelector(".js-videoPlayer_inner");
-                                e && new de({
+                    return e = t, i = [{
+                        key: "initTouch",
+                        value: function() {}
+                    }, {
+                        key: "initPc",
+                        value: function() {
+                            var t = this;
+                            ot.p8.ticker.add(this.render), document.querySelectorAll(".js-cursor-extend").forEach((function(e) {
+                                new de({
                                     el: e,
-                                    onHover: this.onEnterVideo.bind(this),
-                                    onLeave: this.onLeave.bind(this)
+                                    onHover: t.onEnterExtend.bind(t),
+                                    onLeave: t.onLeave.bind(t)
                                 })
+                            })), document.querySelectorAll(".js-cursor-contract").forEach((function(e) {
+                                new de({
+                                    el: e,
+                                    onHover: t.onEnterContract.bind(t),
+                                    onLeave: t.onLeave.bind(t)
+                                })
+                            }));
+                            var e = document.querySelector(".js-videoPlayer_inner");
+                            e && new de({
+                                el: e,
+                                onHover: this.onEnterVideo.bind(this),
+                                onLeave: this.onLeave.bind(this)
+                            })
+                        }
+                    }, {
+                        key: "sizeMask",
+                        value: function() {
+                            q() ? this.sizePoint = {
+                                default: N(40),
+                                fake: N(200),
+                                video: N(120)
+                            } : this.sizePoint = {
+                                default: N(40),
+                                fake: N(200),
+                                video: N(300)
                             }
-                        }, {
-                            key: "sizeMask",
-                            value: function() {
-                                q() ? this.sizePoint = {
-                                    default: N(0),
-                                    fake: N(450),
-                                    video: N(120)
-                                } : this.sizePoint = {
-                                    default: N(0),
-                                    fake: N(450),
-                                    video: N(300)
+                        }
+                    }, {
+                        key: "render",
+                        value: function(t) {
+                            null === this.raf && (this.raf = t);
+                            var e = 1 - Math.pow(.001, t - this.raf);
+                            this.cursor.current.x = xt(this.cursor.current.x, this.cursor.last.x, e), this.cursor.current.y = xt(this.cursor.current.y, this.cursor.last.y, e), this.renderStyle(), this.raf = t
+                        }
+                    }, {
+                        key: "renderStyle",
+                        value: function() {
+                            this.DOM.main.style = "--size: ".concat(this.cursor.value, "px; --x: ").concat(this.cursor.current.x, "px; --y: ").concat(this.cursor.current.y + this.cursor.scroll, "px;")
+                        }
+                    }, {
+                        key: "handleMouseMoving",
+                        value: function(t) {
+                            var e = t.clientX,
+                                i = t.clientY;
+                            this.cursor.last.x = e, this.cursor.last.y = i, this.isReady || Z.isTouchDevice || (this.isReady = !0, this.onLeave())
+                        }
+                    }, {
+                        key: "onEnterVideo",
+                        value: function() {
+                            ot.p8.killTweensOf(this.cursor), ot.p8.to(this.cursor, {
+                                value: F(this.sizePoint.video),
+                                ease: "power3.out",
+                                duration: .6
+                            })
+                        }
+                    }, {
+                        key: "onEnterExtend",
+                        value: function() {
+                            ot.p8.killTweensOf(this.cursor), ot.p8.to(this.cursor, {
+                                value: F(this.sizePoint.fake),
+                                ease: "power3.out",
+                                duration: .6
+                            })
+                        }
+                    }, {
+                        key: "onEnterContract",
+                        value: function() {
+                            ot.p8.killTweensOf(this.cursor), ot.p8.to(this.cursor, {
+                                value: 0,
+                                ease: "power3.out",
+                                duration: .3
+                            })
+                        }
+                    }, {
+                        key: "onLeave",
+                        value: function() {
+                            ot.p8.killTweensOf(this.cursor), ot.p8.to(this.cursor, {
+                                value: F(this.sizePoint.default),
+                                ease: "power3.out",
+                                duration: .6
+                            })
+                        }
+                    }, {
+                        key: "onScroll",
+                        value: function(t) {
+                            var e = t.scroll;
+                            this.cursor.scroll = e, this.renderStyle()
+                        }
+                    }, {
+                        key: "pageEnter",
+                        value: function() {
+                            var t = Z.mouse,
+                                e = t.x,
+                                i = t.y;
+                            this.cursor = {
+                                current: {
+                                    x: e,
+                                    y: i
+                                },
+                                last: {
+                                    x: e,
+                                    y: i
+                                },
+                                value: 0,
+                                scroll: 0
+                            }
+                        }
+                    }, {
+                        key: "onHold",
+                        value: function() {
+                            var t = this;
+                            document.body.classList.add("is-red");
+                            var e = Z.winSize,
+                                i = e.height,
+                                n = e.width;
+                            ot.p8.killTweensOf(this.cursor), ot.p8.to(this.cursor, {
+                                value: 2.5 * Math.max(i, n),
+                                ease: "power3.out",
+                                duration: .8,
+                                onUpdate: function() {
+                                    t.DOM.main.style = "--size: ".concat(t.cursor.value, "px; --x: ").concat(t.cursor.current.x, "px; --y: ").concat(t.cursor.current.y + t.cursor.scroll, "px;")
                                 }
-                            }
-                        }, {
-                            key: "render",
-                            value: function(t) {
-                                null === this.raf && (this.raf = t);
-                                var e = 1 - Math.pow(.001, t - this.raf);
-                                this.cursor.current.x = xt(this.cursor.current.x, this.cursor.last.x, e),
-                                    this.cursor.current.y = xt(this.cursor.current.y, this.cursor.last.y, e),
-                                    this.renderStyle(),
-                                    this.raf = t
-                            }
-                        }, {
-                            key: "renderStyle",
-                            value: function() {
-                                this.DOM.main.style = "--size: ".concat(50, "px; --x: ").concat(this.cursor.current.x, "px; --y: ").concat(this.cursor.current.y + this.cursor.scroll, "px;")
-                            }
-                        }, {
-                            key: "handleMouseMoving",
-                            value: function(t) {
-                                var e = t.clientX
-                                    , i = t.clientY;
-                                this.cursor.last.x = e,
-                                    this.cursor.last.y = i,
-                                this.isReady || Z.isTouchDevice || (this.isReady = !0,
-                                    this.onLeave())
-                            }
-                        }, {
-                            key: "onEnterVideo",
-                            value: function() {
-                                ot.p8.killTweensOf(this.cursor),
-                                    ot.p8.to(this.cursor, {
-                                        value: F(this.sizePoint.video),
-                                        ease: "power3.out",
-                                        duration: .6
-                                    })
-                            }
-                        }, {
-                            key: "onEnterExtend",
-                            value: function() {
-                                ot.p8.killTweensOf(this.cursor),
-                                    ot.p8.to(this.cursor, {
-                                        value: F(this.sizePoint.fake),
-                                        ease: "power3.out",
-                                        duration: .6,
-                                    })
-                            }
-                        }, {
-                            key: "onEnterContract",
-                            value: function() {
-                                ot.p8.killTweensOf(this.cursor),
-                                    ot.p8.to(this.cursor, {
-                                        value: 0,
-                                        ease: "power3.out",
-                                        duration: .3
-                                    })
-                            }
-                        }, {
-                            key: "onLeave",
-                            value: function() {
-                                ot.p8.killTweensOf(this.cursor),
-                                    ot.p8.to(this.cursor, {
-                                        value: F(this.sizePoint.default),
-                                        ease: "power3.out",
-                                        duration: .6
-                                    })
-                            }
-                        }, {
-                            key: "onScroll",
-                            value: function(t) {
-                                var e = t.scroll;
-                                this.cursor.scroll = e,
-                                    this.renderStyle()
-                            }
-                        }, {
-                            key: "pageEnter",
-                            value: function() {
-                                var t = Z.mouse
-                                    , e = t.x
-                                    , i = t.y;
-                                this.cursor = {
-                                    current: {
-                                        x: e,
-                                        y: i
-                                    },
-                                    last: {
-                                        x: e,
-                                        y: i
-                                    },
-                                    value: 0,
-                                    scroll: 0
+                            })
+                        }
+                    }, {
+                        key: "onDown",
+                        value: function(t) {
+                            t.preventDefault(), t.stopPropagation();
+                            var e = this.DOM.btnClip.getBoundingClientRect(),
+                                i = e.left,
+                                n = e.top,
+                                r = e.width,
+                                o = e.height;
+                            this.cursor.current.y = this.cursor.last.y = n + o / 2, this.cursor.current.x = this.cursor.last.x = i + r / 2, this.timeHolde && clearTimeout(this.timeHolde), this.timeHolde = setTimeout(this.onHold, 500)
+                        }
+                    }, {
+                        key: "onUp",
+                        value: function(t) {
+                            var e = this;
+                            t.preventDefault(), t.stopPropagation(), document.body.classList.remove("is-red"), this.timeHolde && clearTimeout(this.timeHolde), ot.p8.killTweensOf(this.cursor), ot.p8.to(this.cursor, {
+                                value: 0,
+                                ease: "power3.out",
+                                duration: .6,
+                                onUpdate: function() {
+                                    e.DOM.main.style = "--size: ".concat(e.cursor.value, "px; --x: ").concat(e.cursor.current.x, "px; --y: ").concat(e.cursor.current.y + e.cursor.scroll, "px;")
                                 }
-                            }
-                        }, {
-                            key: "onHold",
-                            value: function() {
-                                var t = this;
-                                document.body.classList.add("is-red");
-                                var e = Z.winSize
-                                    , i = e.height
-                                    , n = e.width;
-                                ot.p8.killTweensOf(this.cursor),
-                                    ot.p8.to(this.cursor, {
-                                        value: 2.5 * Math.max(i, n),
-                                        ease: "power3.out",
-                                        duration: .8,
-                                        onUpdate: function() {
-                                            t.DOM.main.style = "--size: ".concat(50, "px; --x: ").concat(t.cursor.current.x, "px; --y: ").concat(t.cursor.current.y + t.cursor.scroll, "px;")
-                                        }
-                                    })
-                            }
-                        }, {
-                            key: "onDown",
-                            value: function(t) {
-                                t.preventDefault(),
-                                    t.stopPropagation();
-                                var e = this.DOM.btnClip.getBoundingClientRect()
-                                    , i = e.left
-                                    , n = e.top
-                                    , r = e.width
-                                    , o = e.height;
-                                this.cursor.current.y = this.cursor.last.y = n + o / 2,
-                                    this.cursor.current.x = this.cursor.last.x = i + r / 2,
-                                this.timeHolde && clearTimeout(this.timeHolde),
-                                    this.timeHolde = setTimeout(this.onHold, 500)
-                            }
-                        }, {
-                            key: "onUp",
-                            value: function(t) {
-                                var e = this;
-                                t.preventDefault(),
-                                    t.stopPropagation(),
-                                    document.body.classList.remove("is-red"),
-                                this.timeHolde && clearTimeout(this.timeHolde),
-                                    ot.p8.killTweensOf(this.cursor),
-                                    ot.p8.to(this.cursor, {
-                                        value: 0,
-                                        ease: "power3.out",
-                                        duration: .6,
-                                        onUpdate: function() {
-                                            e.DOM.main.style = "--size: ".concat(50, "px; --x: ").concat(e.cursor.current.x, "px; --y: ").concat(e.cursor.current.y + e.cursor.scroll, "px;")
-                                        }
-                                    })
-                            }
-                        }, {
-                            key: "bindEvent",
-                            value: function() {
-                                this.handleMouseMoving = this.handleMouseMoving.bind(this),
-                                    this.onScroll = this.onScroll.bind(this),
-                                    this.onDown = this.onDown.bind(this),
-                                    this.onUp = this.onUp.bind(this),
-                                    D.on(w, this.pageEnter.bind(this)),
-                                    rt.lenis.on("scroll", this.onScroll),
-                                    document.body.addEventListener("mousemove", this.handleMouseMoving),
-                                    this.DOM.btnClip.addEventListener("touchstart", this.onDown),
-                                    this.DOM.btnClip.addEventListener("touchend", this.onUp)
-                            }
-                        }, {
-                            key: "clear",
-                            value: function() {
-                                document.body.removeEventListener("mousemove", this.handleMouseMoving)
-                            }
-                        }],
-                    i && me(e.prototype, i),
-                    n && me(e, n),
-                        Object.defineProperty(e, "prototype", {
-                            writable: !1
-                        }),
-                        t
+                            })
+                        }
+                    }, {
+                        key: "bindEvent",
+                        value: function() {
+                            this.handleMouseMoving = this.handleMouseMoving.bind(this), this.onScroll = this.onScroll.bind(this), this.onDown = this.onDown.bind(this), this.onUp = this.onUp.bind(this), D.on(w, this.pageEnter.bind(this)), rt.lenis.on("scroll", this.onScroll), document.body.addEventListener("mousemove", this.handleMouseMoving), this.DOM.btnClip.addEventListener("touchstart", this.onDown), this.DOM.btnClip.addEventListener("touchend", this.onUp)
+                        }
+                    }, {
+                        key: "clear",
+                        value: function() {
+                            document.body.removeEventListener("mousemove", this.handleMouseMoving)
+                        }
+                    }], i && me(e.prototype, i), n && me(e, n), Object.defineProperty(e, "prototype", {
+                        writable: !1
+                    }), t
                 }();
                 new be;
                 function ge(t) {
