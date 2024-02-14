@@ -20,7 +20,6 @@ headingElements.forEach(function(element) {
     });
 });
 
-
 (()=>{
         var t, e = {
             5267: (t,e,i)=>{
@@ -3315,32 +3314,10 @@ headingElements.forEach(function(element) {
                             }
                         }, {
                             key: "onLeave",
-                            value: function() {
-                                var t = this;
-                                ot.p8.killTweensOf(this.cursor),
-                                    ot.p8.to(this.cursor, {
-                                        opacity: 0,
-                                        ease: "power3.out",
-                                        duration: .3,
-                                        onUpdate: function() {
-                                            t.DOM.cursor.style = "--x:".concat(t.cursor.current.x, "px; --y:").concat(t.cursor.current.y, "px; --opacity: ").concat(t.cursor.opacity)
-                                        }
-                                    })
-                            }
+                            value: function() {}
                         }, {
                             key: "onEnter",
-                            value: function() {
-                                var t = this;
-                                ot.p8.killTweensOf(this.cursor),
-                                    ot.p8.to(this.cursor, {
-                                        opacity: 1,
-                                        ease: "power3.out",
-                                        duration: .6,
-                                        onUpdate: function() {
-                                            t.DOM.cursor.style = "--x:".concat(t.cursor.current.x, "px; --y:").concat(t.cursor.current.y, "px; --opacity: ").concat(t.cursor.opacity)
-                                        }
-                                    })
-                            }
+                            value: function() {}
                         }, {
                             key: "bindEvent",
                             value: function() {
