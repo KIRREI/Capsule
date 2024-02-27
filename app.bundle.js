@@ -4990,7 +4990,7 @@ headingElements.forEach(function(element) {
                         key: "addLighting",
                         value: function(t) {
                             var e = new ii.Ox3(16777215,5);
-                            e.position.set(1, .5, -.5),
+                            e.position.set(61, 25, -5),
                                 t.add(e),
                                 t.environment = vi.neutralEnvironment
                         }
@@ -5180,8 +5180,8 @@ headingElements.forEach(function(element) {
                         // shadow jordan 4
                         key: "addLighting",
                         value: function(t) {
-                            var e = new ii.Ox3(16777215,10);
-                            e.position.set(5.5, 4, 3.5),
+                            var e = new ii.Ox3(16777215,5);
+                            e.position.set(61, 25, -5),
                                 t.add(e),
                                 t.environment = vi.neutralEnvironment
                         }
@@ -5239,13 +5239,13 @@ headingElements.forEach(function(element) {
                             this.state = {
                                 coffeeRotation: new ii.Pa4(.29,-.98,-.99),
                                 mouseRotation: new ii.Pa4(.84,.15,.84),
-                                coffeeScroller: new ii.Pa4(-.05,.05,.01),
+                                coffeeScroller: new ii.Pa4(-.65,.05,.101),
                                 mouseScroller: new ii.Pa4(-.05,-.05,.01)
                             };
                         var n = this.DOM.main.querySelector(".js-about_ido_coffee");
                         n && (this.obCoffee = new Ti({
                             el: n,
-                            url: "assets/glb/coffee.min.gltf",
+                            url: "assets/glb/pokeball.gltf",
                             scroller: this.state.coffeeScroller,
                             rotation: new ii.USm(this.state.coffeeRotation.x,this.state.coffeeRotation.y,this.state.coffeeRotation.z,"XYZ")
                         }));

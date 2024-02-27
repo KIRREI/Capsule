@@ -92,7 +92,7 @@ font-family: Proxima Nova;
 }
 
 .herored__margin {
-    margin-top: 15% !important;
+    margin-top: 7% !important;
 }
 .page-loading_start {
     position: absolute;
@@ -4982,6 +4982,12 @@ b {
 
 }
 
+.flex-menu {
+
+    align-items: flex-end !important;
+
+}
+
 .image__object-fit,.object__image--fit,.object__image__fit,.wpb_single_image {
     font-size: 0;
     height: 100%;
@@ -7131,7 +7137,7 @@ canvas.three-app {
 .header {
     --top: 1.25rem;
     --color: #ef523d;
-    --fill: #b7ab98;
+    --fill: #ffffff;
     --color-link: hsla(37,18%,66%,.5);
     --color-link-active: #b7ab98;
     left: 0;
@@ -7140,6 +7146,10 @@ canvas.three-app {
     top: 0;
     width: 100%;
     z-index: 9
+}
+
+.color-logo {
+    --fill: #ffffff !important;
 }
 
 .margin-kirei_red {
@@ -7190,7 +7200,6 @@ canvas.three-app {
     margin-top: .3125rem;
     position: fixed;
     top: var(--top);
-    display: none;
 }
 
 .header_logo:hover svg ellipse,.header_logo:hover svg path {
@@ -7211,14 +7220,14 @@ canvas.three-app {
 @media(min-width: 1200px) {
     .header_logo img,.header_logo svg {
         height:3rem;
-        width: 3rem
+        width: 2.1rem
     }
 }
 
 .header_menu {
     position: fixed;
     left: 1.25rem;
-    left: var(--screen-x);
+    right: var(--screen-x);
     top: var(--top)
 }
 
@@ -7385,9 +7394,9 @@ canvas.three-app {
         --bottom:9.9206349206vh
     }
     .footer_socials {
-        top: var(--bottom);
-        right: 0.5rem;
-        right: calc(var(--screen-x) - 0.75rem);
+        bottom: var(--bottom);
+        /*right: 0.5rem;*/
+        left: calc(var(--screen-x) - 0.75rem);
         margin-top: -2.5rem;
         position: fixed;
     }
@@ -7944,7 +7953,7 @@ canvas.three-app {
 
 @media(min-width: 1200px) {
     .about_ido_coffee {
-        left: -17rem;
+        left: -15rem;
         bottom:unset;
         top: calc(0px - var(--size-canvas)/3)
     }
@@ -10154,7 +10163,7 @@ padding-top: 1.25rem;
     }
     .line-height-setting{
         line-height: 5.1rem;
-        margin-top: 15%;
+        margin-top: 7%;
     }
     .d-block .line--mask-element{
         font-size: 1.4rem;
