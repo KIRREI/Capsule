@@ -4797,7 +4797,7 @@ canvas.three-app {
 
 .header {
   --top: 1.25rem;
-  --color: #ef523d;
+  --color: #eb5939;
   --fill: #b7ab98;
   --color-link: hsla(37,18%,66%,.5);
   --color-link-active: #b7ab98;
@@ -4921,7 +4921,7 @@ canvas.three-app {
 
 .is-red .header {
   --mode: normal;
-  --color: #0d0d0d;
+  --color: #b7ab98;
   --fill: #0d0d0d;
   --color-link-active: #0d0d0d;
   --color-link: hsla(0,0%,5%,.5)
@@ -4968,7 +4968,7 @@ canvas.three-app {
 
 .footer {
   --bottom: 2rem;
-  --color: #ef523d;
+  --color: #0d0d0d;
   --color-primary: #b7ab98;
   bottom: 0;
   left: 0;
@@ -5039,7 +5039,7 @@ canvas.three-app {
 
 .is-red .footer {
   --mode: normal;
-  --color: #0d0d0d;
+  --color: #eb5939;
   --color-primary: #0d0d0d
 }
 

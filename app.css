@@ -430,6 +430,11 @@ font-family: Proxima Nova;
 .secondary-font {
     font-family: var(--secondary-font) !important;
 }
+
+.proxima-font {
+    font-family: Proxima Nova, sans-serif !important;
+}
+
 .skils-item-sub-title,
 .skils-item-sub-title + p {
     color: var(--owog);
@@ -7271,7 +7276,7 @@ canvas.three-app {
         background: transparent;
         color: var(--color-link);
         font-size: 1rem;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
     }
 
 
@@ -7283,7 +7288,7 @@ canvas.three-app {
         -webkit-transform: translateY(100%);
         transform: translateY(100%);
         font-size: 1rem;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
     }
 }
 
@@ -7315,7 +7320,7 @@ canvas.three-app {
 .header_menu_item.is-active .header_menu_item_link__active,.header_menu_item:hover .header_menu_item_link__active {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    color: #ef523d;
+    color: #ffffff;
 }
 
 .is-red .header {
@@ -8113,7 +8118,7 @@ canvas.three-app {
     leading-trim: top;
     text-edge: cap alphabetic;
     display: block;
-    line-height: 1.4;
+    line-height: 1.15;
     padding: .25rem 0;
     position: relative;
     text-align: right
