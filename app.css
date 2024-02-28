@@ -7848,7 +7848,7 @@ canvas.three-app {
 
 @media(min-width: 1200px) {
     .about-jordan {
-        --size-canvas:81.5rem !important;
+        --size-canvas:84.5rem !important;
     }
 }
 
@@ -7979,7 +7979,7 @@ canvas.three-app {
 @media(min-width: 1200px) {
     .about_ido_mouse {
         left: 67rem;
-        bottom:-10rem;
+        bottom:-15rem;
         right: calc(0px - var(--size-canvas)/2);
         top: unset
     }
