@@ -5254,7 +5254,7 @@ headingElements.forEach(function(element) {
                         var r = this.DOM.main.querySelector(".js-about_ido_mouse");
                         r && (this.obMouse = new Hi({
                             el: r,
-                            url: "assets/glb/jordan.gltf",
+                            url: "assets/glb/mouse.min.gltf",
                             scroller: this.state.mouseScroller,
                             rotation: new ii.USm(this.state.mouseRotation.x,this.state.mouseRotation.y,this.state.mouseRotation.z,"XYZ")
                         })),
