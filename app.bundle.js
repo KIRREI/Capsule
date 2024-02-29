@@ -4990,8 +4990,7 @@ headingElements.forEach(function(element) {
                         key: "addLighting",
                         value: function(t) {
                             var e = new ii.Ox3(16777215,5);
-                            e.position.set(-91, 80, 145),
-                                e.intensity = 8; // Modification de l'intensité de la lumière à 10
+                            e.position.set(61, 25, -5),
                                 t.add(e),
                                 t.environment = vi.neutralEnvironment
                         }
@@ -5182,8 +5181,7 @@ headingElements.forEach(function(element) {
                         key: "addLighting",
                         value: function(t) {
                             var e = new ii.Ox3(16777215,5);
-                            e.position.set(191, 225, 245),
-                                e.intensity = 4.5; // Modification de l'intensité de la lumière à 10
+                            e.position.set(61, 25, -5),
                                 t.add(e),
                                 t.environment = vi.neutralEnvironment
                         }
@@ -5247,7 +5245,7 @@ headingElements.forEach(function(element) {
                         var n = this.DOM.main.querySelector(".js-about_ido_coffee");
                         n && (this.obCoffee = new Ti({
                             el: n,
-                            url: "assets/glb/PokeBall.gltf",
+                            url: "assets/glb/pokeball.gltf",
                             scroller: this.state.coffeeScroller,
                             rotation: new ii.USm(this.state.coffeeRotation.x,this.state.coffeeRotation.y,this.state.coffeeRotation.z,"XYZ")
                         }));
