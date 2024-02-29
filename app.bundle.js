@@ -4990,7 +4990,7 @@ headingElements.forEach(function(element) {
                         key: "addLighting",
                         value: function(t) {
                             var e = new ii.Ox3(16777215,5);
-                            e.position.set(61, 25, -5),
+                            e.position.set(-91, 80, 145),
                                 t.add(e),
                                 t.environment = vi.neutralEnvironment
                         }
@@ -5181,7 +5181,7 @@ headingElements.forEach(function(element) {
                         key: "addLighting",
                         value: function(t) {
                             var e = new ii.Ox3(16777215,5);
-                            e.position.set(61, 25, -5),
+                            e.position.set(191, 225, 245),
                                 t.add(e),
                                 t.environment = vi.neutralEnvironment
                         }
