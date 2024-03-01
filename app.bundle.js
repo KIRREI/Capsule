@@ -5375,7 +5375,7 @@ headingElements.forEach(function(element) {
                     }(o, t);
                     var e, i, n, r = Ui(o);
                     function o(t) {
-                        var e, i = t.el, n = t.url, s = void 0 === n ? "assets/glb/mapteste.gltf" : n, a = t.onLoaded, l = void 0 === a ? null : a;
+                        var e, i = t.el, n = t.url, s = void 0 === n ? "assets/glb/pokeglobe.gltf" : n, a = t.onLoaded, l = void 0 === a ? null : a;
                         return function(t, e) {
                             if (!(t instanceof e))
                                 throw new TypeError("Cannot call a class as a function")
@@ -5418,9 +5418,11 @@ headingElements.forEach(function(element) {
                         value: function(t) {
                             var e = new ii.Ox3(16777215,8.5);
                             e.position.set(-300,150, -30),
+                                e.intensity = 15.5; // Modification de l'intensité de la lumière à 10
                                 t.add(e);
                             var e = new ii.Ox3(16777215,5);
                             e.position.set(90,-30, 20),
+                                e.intensity = 8.5;
                                 t.add(e);
                             var i = new ii.ybr(855309,35,-30);
                             t.fog = i,

@@ -7231,7 +7231,6 @@ canvas.three-app {
 
 .header_menu {
     position: fixed;
-    left: 1.25rem;
     right: var(--screen-x);
     top: var(--top)
 }
