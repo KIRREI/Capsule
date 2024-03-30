@@ -4991,7 +4991,7 @@ headingElements.forEach(function(element) {
                         value: function(t) {
                             var e = new ii.Ox3(16777215,5);
                             e.position.set(-91, 80, 145),
-                                e.intensity = 8; // Modification de l'intensité de la lumière à 10
+                                e.intensity = 3; // Modification de l'intensité de la lumière à 10
                                 t.add(e),
                                 t.environment = vi.neutralEnvironment
                         }
@@ -5239,15 +5239,15 @@ headingElements.forEach(function(element) {
                                 main: i
                             },
                             this.state = {
-                                coffeeRotation: new ii.Pa4(.29,-.98,-.99),
-                                mouseRotation: new ii.Pa4(.84,.15,.84),
-                                coffeeScroller: new ii.Pa4(-.65,.05,.101),
+                                coffeeRotation: new ii.Pa4(329,818,99.15),
+                                mouseRotation: new ii.Pa4(184,.15,.84),
+                                coffeeScroller: new ii.Pa4(7,-261,90),
                                 mouseScroller: new ii.Pa4(-.05,-.05,.01)
                             };
                         var n = this.DOM.main.querySelector(".js-about_ido_coffee");
                         n && (this.obCoffee = new Ti({
                             el: n,
-                            url: "assets/glb/pokeball.gltf",
+                            url: "assets/glb/coffee.min.gltf",
                             scroller: this.state.coffeeScroller,
                             rotation: new ii.USm(this.state.coffeeRotation.x,this.state.coffeeRotation.y,this.state.coffeeRotation.z,"XYZ")
                         }));
@@ -5416,18 +5416,11 @@ headingElements.forEach(function(element) {
                     }, {
                         key: "addLighting",
                         value: function(t) {
-                            var e = new ii.Ox3(16777215,8.5);
-                            e.position.set(-300,150, -30),
-                                e.intensity = 15.5; // Modification de l'intensité de la lumière à 10
-                                t.add(e);
-                            var e = new ii.Ox3(16777215,5);
-                            e.position.set(90,-30, 20),
-                                e.intensity = 8.5;
-                                t.add(e);
-                            var i = new ii.ybr(855309,35,-30);
-                            t.fog = i,
-                                t.environment = vi.neutralEnvironment;
-                            var n = new ii.Mig(16777215,10);
+                            var e = new ii.Ox3(16777215, 12);
+                            e.position.set(1, .08, -.05), t.add(e);
+                            var i = new ii.ybr(855309, 0, 3);
+                            t.fog = i, t.environment = vi.neutralEnvironment;
+                            var n = new ii.Mig(16777215, 20);
                             t.add(n)
                         }
                     }]) && Vi(e.prototype, i),

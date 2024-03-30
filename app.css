@@ -7841,7 +7841,7 @@ canvas.three-app {
 
 @media(min-width: 1200px) {
     .about-coffee {
-        --size-canvas:43.5rem !important;
+        --size-canvas:69rem !important;
     }
 }
 
@@ -7957,7 +7957,7 @@ canvas.three-app {
 
 @media(min-width: 1200px) {
     .about_ido_coffee {
-        left: -15rem;
+        left: -33rem;
         bottom:unset;
         top: calc(0px - var(--size-canvas)/3)
     }
@@ -8464,7 +8464,7 @@ canvas.three-app {
     height: 100%;
     left: 0;
     position: absolute;
-    top: -3rem;
+    top: -2.5rem;
     width: 100%
 }
 
@@ -8478,7 +8478,7 @@ canvas.three-app {
 
 @media(min-width: 768px) {
     .client_list_3d_inner {
-        height:113%;
+        height:105%;
         margin-left: unset;
         margin-top: unset;
         width: 100%
