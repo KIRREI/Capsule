@@ -155,7 +155,7 @@ font-family: Proxima Nova;
 
 @media (min-width: 1400px) and (max-width: 1900px) {
     .my-works-m-dark {
-        margin-top: 3.6rem !important;
+        margin-top: -1.2rem !important;
     }
 }
 
@@ -3399,7 +3399,7 @@ progress {
     }
 
     .container_red_content1 {
-        margin-top: 19rem;
+        margin-top: 44.8rem;
         margin-bottom: 6rem;
         padding-bottom: 1rem;
         padding-top: 1rem
@@ -7141,9 +7141,9 @@ canvas.three-app {
 
 .header {
     --top: 1.25rem;
-    --color: #ef523d;
+    --color: #eb5939;
     --fill: #ffffff;
-    --color-link: hsla(37,18%,66%,.5);
+    --color-link: hsla(37, 18%, 66%, .5);
     --color-link-active: #b7ab98;
     left: 0;
     mix-blend-mode: var(--mode);
