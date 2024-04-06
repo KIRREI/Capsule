@@ -71,6 +71,24 @@ font-family: Proxima Nova;
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Avant Garde Gothic Medium';
+    src: url(web/ITC-Avant-Garde-Gothic-Medium.woff2) format('woff2'),
+    url(web/ITC-Avant-Garde-Gothic-Medium.woff2) format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Kobe11-Bold';
+    src: url(web/kobe11-bold.woff2) format('woff2'),
+    url(web/kobe11-bold.woff2) format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
 
 :root {
     --body-bg: #0b0b0b;
@@ -5626,7 +5644,7 @@ b {
 
     font-kirei-mobile {
         margin-bottom: 0.5rem !important;
-        font-size: 20px !important;
+        font-size: 24px !important;
     }
 
     .hero_bg_mobile {
@@ -7788,7 +7806,7 @@ canvas.three-app {
 @media(min-width: 1200px) {
     .hero_content {
         padding-bottom:18.6507936508vh;
-        padding-top: 15.7738095238vh
+        padding-top: 23.7738095238vh
     }
 }
 
@@ -10147,10 +10165,25 @@ padding-top: 1.25rem;
     }
     @media(min-width: 1200px) {
         .line .char {
-            font-size: 7.1rem;
+            font-size: 7.4rem;
             letter-spacing: -0.2rem;
         }
     }
+
+    @media(min-width: 1200px) {
+        .font-title {
+            font-size: 7rem !important;
+            letter-spacing: -0.2rem !important;
+        }
+    }
+
+    @media(min-width: 767px) {
+        .font-title {
+            font-size: 7rem !important;
+            letter-spacing: -0.2rem !important;
+        }
+    }
+
 
     @media(min-width: 1100px) {
         .font-less {
@@ -10184,8 +10217,10 @@ padding-top: 1.25rem;
         padding-bottom: 3rem !important;
     }
     .kirei {
-        font-size: 17px !important;
-        letter-spacing: 6px !important;
+        font-family: "Kobe11-Bold" !important;
+        font-size: 35px !important;
+        text-transform: lowercase !important;
+        letter-spacing: 8px !important;
         margin-bottom: -1px !important;
     }
 }
