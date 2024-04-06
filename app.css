@@ -7021,7 +7021,7 @@ p {
 
 .text-uppercase {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .none-break {
@@ -7594,13 +7594,13 @@ canvas.three-app {
 }
 
 .footer_sound {
-    --color: #b7ab98;
+    --color: #ffffff;
     --color-label: #4d4d4d;
     grid-gap: .3125rem;
     background: none;
     border: none;
     bottom: calc(var(--bottom) + 2.8em);
-    color: var(--color-label);
+    color: #ffffff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7609,10 +7609,8 @@ canvas.three-app {
     position: fixed;
     right: calc(1.25rem - 2.8em);
     right: calc(var(--screen-x) - 2.8em);
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    -webkit-transition: color .4s cubic-bezier(.165,.84,.44,1);
-    transition: color .4s cubic-bezier(.165,.84,.44,1)
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .footer_sound_list {
@@ -7637,14 +7635,10 @@ canvas.three-app {
     top: 0
 }
 
-.footer_sound_label {
-    -webkit-transition: color .4s cubic-bezier(.165,.84,.44,1);
-    transition: color .4s cubic-bezier(.165,.84,.44,1)
-}
 
 @media(any-hover: hover) {
     .footer_sound:hover .footer_sound_label {
-        color:#b7ab98
+        color:#ffffff
     }
 }
 
