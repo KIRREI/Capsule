@@ -7800,7 +7800,7 @@ canvas.three-app {
 @media(min-width: 1200px) {
     .hero_content {
         padding-bottom:18.6507936508vh;
-        padding-top: 23.7738095238vh
+        padding-top: 10.7738095238vh
     }
 }
 
@@ -10159,7 +10159,7 @@ padding-top: 1.25rem;
     }
     @media(min-width: 1200px) {
         .line .char {
-            font-size: 7.4rem;
+            font-size: 6.6rem;
             letter-spacing: -0.2rem;
         }
     }
@@ -10205,16 +10205,23 @@ padding-top: 1.25rem;
     .line-height-header {
         word-spacing: -1.8rem !important;
         margin-bottom: -1rem !important;
-        margin-top: -1rem !important;
+        margin-top: -2rem !important;
     }
     .margin-multy {
         padding-bottom: 3rem !important;
     }
-    .kirei {
+    .gg {
         font-family: "Kobe11-Bold" !important;
         font-size: 35px !important;
         text-transform: lowercase !important;
         letter-spacing: 8px !important;
+        margin-bottom: -1px !important;
+    }
+
+    .deft {
+        font-family: "Avant Garde" !important;
+        font-size: 7rem !important;
+        letter-spacing: 0px !important;
         margin-bottom: -1px !important;
     }
 }
