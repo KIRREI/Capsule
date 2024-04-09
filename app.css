@@ -7599,8 +7599,8 @@ canvas.three-app {
     grid-gap: .3125rem;
     background: none;
     border: none;
-    bottom: calc(var(--bottom) + 2.8em);
-    color: #ffffff;
+    bottom: calc(var(--bottom) + 4.5em);
+    color: #b7ab98;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7608,7 +7608,7 @@ canvas.three-app {
     overflow: hidden;
     position: fixed;
     right: calc(1.25rem - 2.8em);
-    right: calc(var(--screen-x) - 2.8em);
+    right: calc(var(--screen-x) - 4.5em);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
