@@ -5980,6 +5980,19 @@ b {
         margin-top: 0rem !important;
     }
 
+    .about-margin-title {
+        margin-top: -3rem!important;
+        margin-bottom: 1.875rem!important;
+    }
+
+    .gg {
+        font-family: "Kobe11-Bold" !important;
+        font-size: 28px !important;
+        text-transform: lowercase !important;
+        letter-spacing: 6px !important;
+        margin-bottom: 8px !important;
+    }
+
     .disable_social_mobile {
         display: none !important;
     
@@ -6489,9 +6502,22 @@ b {
         position: fixed;
     }
 
+    .about-margin-title {
+        margin-top: -3rem!important;
+        margin-bottom: 1.875rem!important;
+    }
+
+    .gg {
+        font-family: "Kobe11-Bold" !important;
+        font-size: 28px !important;
+        text-transform: lowercase !important;
+        letter-spacing: 6px !important;
+        margin-bottom: 8px !important;
+    }
+
     .disable_social_mobile {
 
-        display: none !;
+        display: none !important;
     }
 
     .row {
@@ -6828,9 +6854,11 @@ p {
     margin-bottom: 2.1875rem
 }
 
+@media(min-width: 768px) {
 .about-margin-title {
     margin-top: 3.875rem!important;
     margin-bottom: 1.875rem!important;
+}
 }
 
 .about-margin-title-red {
