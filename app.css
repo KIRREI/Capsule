@@ -5986,16 +5986,16 @@ b {
     }
 
     .guillemet-font{
-        padding-top: 3rem !important;
-        margin-left: 1.3em !important;
+        padding-top: 2rem !important;
+        margin-left: 0.3em !important;
         margin-bottom: 1rem !important;
         line-height: 1.35rem !important;
-        font-family: "Avant Garde Gothic Medium";
+        font-family: "Avant Garde";
         font-style: normal;
         font-weight: normal;
-        width: 20rem !important;
+        width: 10rem !important;
         letter-spacing: 0rem !important;
-        font-size: 1.3rem !important;
+        font-size: 0.8rem !important;
     }
 
     .testimonial_content b {
@@ -6004,11 +6004,11 @@ b {
         font-weight: normal !important;
         color: #ef523d;
         display: block;
-        font-size: 3.1rem;
+        font-size: 6.1rem;
         left: 0;
         letter-spacing: -.05em;
         line-height: 84%;
-        margin-left: -0.65em;
+        margin-left: -0.06em;
         text-transform: uppercase;
         top: 0
     }
