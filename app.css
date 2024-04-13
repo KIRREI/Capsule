@@ -5801,7 +5801,7 @@ b {
         letter-spacing: -0.2rem !important;
         font-size: 6rem !important ;
         margin-top: 5rem !important;
-        margin-bottom: 0rem !important;
+        margin-bottom: 5rem !important;
     }
 
     .ludwig-mobile{
@@ -6536,17 +6536,20 @@ b {
     }
 
     .guillemet-font{
+        padding-top: 3rem !important;
+        margin-left: 1.3em !important;
         margin-bottom: 1rem !important;
-        line-height: 1.2rem !important;
+        line-height: 1.35rem !important;
         font-family: "Avant Garde Gothic Medium";
         font-style: normal;
         font-weight: normal;
         width: 20rem !important;
         letter-spacing: 0rem !important;
-        font-size: 1rem !important;
+        font-size: 1.3rem !important;
     }
 
     .testimonial_content b {
+        margin-bottom: -2.5rem;
         font-family: "Avant Garde" !important;
         font-weight: normal !important;
         color: #ef523d;
@@ -6555,7 +6558,7 @@ b {
         left: 0;
         letter-spacing: -.05em;
         line-height: 84%;
-        margin-left: -0.8em;
+        margin-left: -0.65em;
         text-transform: uppercase;
         top: 0
     }
