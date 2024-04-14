@@ -5185,7 +5185,7 @@ b {
 
 @media(min-width: 768px)and (max-width:1199.98px) {
     .h1,h1 {
-        font-size:5.875rem
+        font-size:4.875rem
     }
 }
 @media(min-width: 320px)and (max-width:425px) {
@@ -6161,8 +6161,8 @@ b {
 /*Version mobile petite*/
 @media(min-width: 320px)and (max-width:424px) {
     .mobile-margine {
-        margin-left: 8rem !important;
-        bottom: 1.5rem !important;
+        margin-left: 2rem !important;
+        bottom: -3.5rem !important;
     }
 }
 
@@ -6251,7 +6251,7 @@ b {
     }
 
     .about-cofee-mobile {
-        --size-canvas: 19.875rem !important;
+        --size-canvas: 26.875rem !important;
     }
 
     .margine-mywork-mobile {
@@ -7441,8 +7441,8 @@ canvas.three-app {
     .header_menu_item_link__deep {
         background: transparent;
         color: var(--color-link);
-        font-size: 0.85rem;
-        letter-spacing: 2px;
+        font-size: 0.75rem !important;
+        letter-spacing: 0px !important;
     }
 
     .header_menu_item_link__active {
@@ -7452,8 +7452,57 @@ canvas.three-app {
         top: 0;
         -webkit-transform: translateY(100%);
         transform: translateY(100%);
-        font-size: 0.85rem;
-        letter-spacing: 2px;
+        font-size: 0.75rem !important;
+        letter-spacing: 0px !important;
+    }
+
+    .header_menu a {
+        leading-trim: top;
+        text-edge: cap alphabetic;
+        display: block;
+        line-height: 0.9 !important;
+        padding: .25rem 0;
+        position: relative;
+        text-align: right
+    }
+
+    .text-uppercase {
+        text-transform: uppercase;
+        font-size: 0.75rem !important;
+    }
+
+    .header_logo {
+        left: 1.25rem !important;
+        left: 2rem !important;
+        margin-top: .3125rem;
+        position: fixed;
+        top: var(--top);
+    }
+
+    .header_menu {
+        position: fixed;
+        right: 2.5rem !important;
+        top: var(--top)
+    }
+
+    .footer_sound {
+        --color: #ffffff;
+        --color-label: #4d4d4d;
+        grid-gap: .3125rem;
+        background: none;
+        border: none;
+        bottom: calc(var(--bottom) + 4.5em);
+        color: #b7ab98;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: .3125rem;
+        overflow: hidden;
+        position: fixed;
+        right: calc(1.25rem - 2.8em);
+        right: calc(var(--screen-x) - 3.8em) !important;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
     }
 }
 
@@ -7557,14 +7606,14 @@ canvas.three-app {
 }
 
 @media(min-width: 768px)and (max-width:1199.98px) {
+
     .footer_socials {
-        top: var(--bottom);
-        right: 0.7rem;
-        right: calc(var(--screen-x) - 0.75rem);
-        margin-top: -0.5rem;
-        margin-right: 0.4rem !important;
+        bottom: var(--bottom);
+        left: calc(var(--screen-x) - 0rem);
+        margin-top: -2.5rem;
         position: fixed;
     }
+
     .footer_socials li:not(:last-child) {
         margin-bottom: 0.8rem !important;
     }
@@ -8184,13 +8233,13 @@ canvas.three-app {
     .about_ido_coffee {
         z-index: 0;
         padding-top: 32rem;
-        left: -9rem;
+        left: -14.5rem;
         bottom:unset;
         top: calc(0px - var(--size-canvas)/3)
     }
 
     .about-coffee {
-        --size-canvas:22.5rem !important;
+        --size-canvas:26.5rem !important;
     }
 
 }
