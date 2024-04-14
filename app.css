@@ -8209,14 +8209,14 @@ canvas.three-app {
 
     .about_ido_coffee {
         z-index: 0;
-        padding-top: 36rem;
-        left: -14rem;
+        padding-top: 41rem;
+        left: -24rem;
         bottom:unset;
         top: calc(0px - var(--size-canvas)/3)
     }
 
     .about-coffee {
-        --size-canvas:32.5rem !important;
+        --size-canvas:42.5rem !important;
     }
 
 }
