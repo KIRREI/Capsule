@@ -6246,8 +6246,11 @@ b {
     /*}*/
 
     .list2-textedark-mobile {
-        padding-top: 1rem !important;
         width:  13rem !important;
+    }
+
+    .LISTEDARK-2-325 {
+        padding-top: 1rem !important;
     }
 
     .about-cofee-mobile {
