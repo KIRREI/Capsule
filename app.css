@@ -5592,7 +5592,10 @@ b {
     }
 
     .hide-dark-texte2 {
-        width: 51% !important;
+        width: 53% !important;
+    }
+    .padding-tablette-3 {
+        padding-left: 4.2rem !important;
     }
 
     .hide-dark-texte3 {
@@ -5600,11 +5603,14 @@ b {
     }
 
     .hide-dark-texte4 {
-        width: 52% !important;
+        width: 53% !important;
+    }
+    .padding-tablette-4 {
+        padding-left: 4.2rem !important;
     }
 
     .hide-dark-texte5 {
-        width: 54% !important;
+        width: 53% !important;
     }
 
     .hide-dark-texte6 {
@@ -7109,18 +7115,18 @@ p {
         padding-left: 3rem !important;
         margin-top: 4.2rem !important;
         letter-spacing: -0.04rem !important;
-        font-size: 0.85rem !important;
+        font-size: 0.9rem !important;
         padding-bottom: 0.1rem !important;
     }
     .list2-mini-bas {
         padding-left: 3rem !important;
-        font-size: 0.64rem !important;
-        font-family: "Avant Garde Gothic Medium" !important;
+        font-size: 0.85rem !important;
+        font-family: Proxima Nova,sans-serif !important;
     }
 
     .list2-mini-bas-noir {
-        font-size: 0.64rem !important;
-        font-family: "Avant Garde" !important;
+        font-size: 0.85rem !important;
+        font-family: Proxima Nova,sans-serif !important;
     }
 }
 
