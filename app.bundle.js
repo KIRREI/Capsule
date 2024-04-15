@@ -5375,7 +5375,7 @@ headingElements.forEach(function(element) {
                     }(o, t);
                     var e, i, n, r = Ui(o);
                     function o(t) {
-                        var e, i = t.el, n = t.url, s = void 0 === n ? "assets/glb/pokeglobe.gltf" : n, a = t.onLoaded, l = void 0 === a ? null : a;
+                        var e, i = t.el, n = t.url, s = void 0 === n ? "assets/glb/pokeglobe2.gltf" : n, a = t.onLoaded, l = void 0 === a ? null : a;
                         return function(t, e) {
                             if (!(t instanceof e))
                                 throw new TypeError("Cannot call a class as a function")
