@@ -168,12 +168,12 @@ font-family: Proxima Nova;
 }
 
 .margin-last-Feel {
-    margin-left: 2.5rem !important;
+    margin-left: 1.9rem !important;
 }
 
 @media (min-width: 768px) {
     .padding-motto-red {
-        padding-top:38.7vh !important;
+        padding-top:27rem !important;
     }
 }
 
@@ -185,7 +185,7 @@ font-family: Proxima Nova;
 
 @media(min-width: 1200px){
     .font-last-red {
-        padding-bottom: 3.4rem !important;
+        padding-bottom: 3.5rem !important;
 
     }
 }
@@ -215,7 +215,7 @@ font-family: Proxima Nova;
 
     .font-last-height {
         letter-spacing: -0.2rem !important;
-        padding-bottom: 3rem;
+        padding-bottom: 3.45rem;
         line-height: 103% !important;
         padding-left: 11rem ;
         width: 52rem !important;
@@ -288,9 +288,9 @@ font-family: Proxima Nova;
 @media(min-width: 1200px){
     .font-last_red {
         letter-spacing: -0.2rem !important;
-        padding-bottom: 3rem;
+        padding-bottom: 3.7rem;
         padding-left: 11rem ;
-        line-height: 103% !important;
+        line-height: 4.2rem !important;
         width: 52rem !important;
         max-width: 200rem !important;
         font-size: 4.2rem !important;
@@ -304,7 +304,7 @@ font-family: Proxima Nova;
         font-weight: normal;
         width: 20rem !important;
         letter-spacing: 0rem !important;
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
     }
 }
 
@@ -330,8 +330,9 @@ font-family: Proxima Nova;
     }
 
     .font-last-height-3 {
+        margin-top: -1rem !important;
         letter-spacing: -0.2rem !important;
-        padding-bottom: 3rem;
+        padding-bottom: 3.325rem;
         line-height: 103% !important;
         padding-left: 19rem ;
         width: 67rem !important;
@@ -1732,7 +1733,7 @@ font-family: Proxima Nova;
 .line1_red {
     border: 0;
     width: 105%;
-    padding-bottom: 3.75rem;
+    padding-bottom: 3.65rem;
     padding-top: 0rem;
     border-top: 1.5px solid;
     color: inherit;
@@ -3423,8 +3424,8 @@ progress {
     }
 
     .container_red_content1 {
-        margin-top: 64.5vh;
-        margin-bottom: 8.6vh;
+        margin-top: 19rem;
+        margin-bottom: 6rem;
         padding-bottom: 1rem;
         padding-top: 1rem
     }
