@@ -171,8 +171,14 @@ font-family: Proxima Nova;
     margin-left: 2.5rem !important;
 }
 
+@media (min-width: 768px) {
+    .padding-motto-red {
+        padding-top:38.7vh !important;
+    }
+}
+
 @media (min-width: 1400px) and (max-width: 1900px) {
-    .my-works-m-dark {
+    .y-works-m-dark {
         margin-top: -1.2rem !important;
     }
 }
@@ -3417,8 +3423,8 @@ progress {
     }
 
     .container_red_content1 {
-        margin-top: 44.8rem;
-        margin-bottom: 6rem;
+        margin-top: 64.5vh;
+        margin-bottom: 8.6vh;
         padding-bottom: 1rem;
         padding-top: 1rem
     }
@@ -8605,7 +8611,7 @@ canvas.three-app {
 
 @media(min-width: 768px) {
     .client_info_red {
-        margin-bottom:30.261905vh !important;
+        margin-bottom:30.4vh !important;
     }
 }
 
@@ -9702,7 +9708,7 @@ padding-top: 1.25rem;
     }
 
     .motto__red {
-        margin-top: 20rem;
+        margin-top: 20vh;
         border-bottom: 1px solid #0a0a0a;
         border-top: 1px solid #0a0a0a
     }
