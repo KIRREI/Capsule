@@ -168,7 +168,7 @@ font-family: Proxima Nova;
 }
 
 .margin-last-Feel {
-    margin-left: 1.9rem !important;
+    margin-left: 0rem !important;
 }
 
 @media (min-width: 768px) {
@@ -194,20 +194,20 @@ font-family: Proxima Nova;
 
     .guillemet-font{
         margin-bottom: 1rem !important;
-        line-height: 1.2rem !important;
-        font-family: "Avant Garde Gothic Medium";
+        line-height: 1.25rem !important;
+        font-family: "Avant Garde";
         font-style: normal;
         font-weight: normal;
         width: 20rem !important;
         letter-spacing: 0rem !important;
-        font-size: 0.9rem !important;
+        font-size: 1.2rem !important;
     }
 
     .font-last {
         letter-spacing: -0.2rem !important;
-        padding-bottom: 3rem;
+        padding-bottom: 6.5rem;
         line-height: 3.5rem !important;
-        padding-left: 11rem ;
+        padding-left: 11.3rem ;
         width: 52rem !important;
         max-width: 200rem !important;
         font-size: 4.2rem !important;
@@ -215,9 +215,9 @@ font-family: Proxima Nova;
 
     .font-last-height {
         letter-spacing: -0.2rem !important;
-        padding-bottom: 3.45rem;
+        padding-bottom: 6.8rem;
         line-height: 103% !important;
-        padding-left: 11rem ;
+        padding-left: 11.3rem ;
         width: 52rem !important;
         max-width: 200rem !important;
         font-size: 4.2rem !important;
@@ -288,9 +288,9 @@ font-family: Proxima Nova;
 @media(min-width: 1200px){
     .font-last_red {
         letter-spacing: -0.2rem !important;
-        padding-bottom: 3.7rem;
-        padding-left: 11rem ;
-        line-height: 4.2rem !important;
+        padding-bottom: 7rem;
+        padding-left: 11.3rem ;
+        line-height: 4.3rem !important;
         width: 52rem !important;
         max-width: 200rem !important;
         font-size: 4.2rem !important;
@@ -298,13 +298,13 @@ font-family: Proxima Nova;
 
     .guillemet-last-3 {
         margin-bottom: -7rem !important;
-        line-height: 1.2rem !important;
-        font-family: "Avant Garde Gothic Medium";
+        line-height: 1.25rem !important;
+        font-family: "Avant Garde";
         font-style: normal;
         font-weight: normal;
         width: 20rem !important;
         letter-spacing: 0rem !important;
-        font-size: 0.9rem !important;
+        font-size: 1.2rem !important;
     }
 }
 
@@ -321,9 +321,9 @@ font-family: Proxima Nova;
 
     .font-last-3 {
         letter-spacing: -0.2rem !important;
-        padding-bottom: 3rem;
+        padding-bottom: 6.5rem;
         line-height: 3.5rem !important;
-        padding-left: 19rem ;
+        padding-left: 18.8rem ;
         width: 67rem !important;
         max-width: 200rem !important;
         font-size: 4.2rem !important;
@@ -332,9 +332,9 @@ font-family: Proxima Nova;
     .font-last-height-3 {
         margin-top: -1rem !important;
         letter-spacing: -0.2rem !important;
-        padding-bottom: 3.325rem;
+        padding-bottom: 6.85rem;
         line-height: 103% !important;
-        padding-left: 19rem ;
+        padding-left: 18.72rem ;
         width: 67rem !important;
         max-width: 200rem !important;
         font-size: 4.2rem !important;
@@ -9442,7 +9442,7 @@ span.icon {
 @media(min-width: 768px) {
     .testimonial_content {
         margin-bottom: 1.875rem;
-        margin-left: 2em;
+        margin-left: 0em;
         position: relative
     }
 }
@@ -9487,17 +9487,19 @@ span.icon {
         text-transform: uppercase;
         top: 0
         display:inherit;
-        font-size: 3.25rem;
-        margin-left: -2.5rem;
+        font-size: 8.25rem;
+        margin-top:-3.5rem !important;
+        margin-left: -0.6rem !important;
         position: absolute!important
     }
 }
 
 @media(min-width: 1200px) {
     .testimonial_content b {
+        margin-top:-3.5rem !important;
         display:inherit;
-        font-size: 3.25rem;
-        margin-left: -2.5rem;
+        font-size: 8.25rem;
+        margin-left: -0.6rem;
         position: absolute!important
     }
 }
