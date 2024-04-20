@@ -149,18 +149,18 @@ font-family: Proxima Nova;
 }
 
 .guillemet-font{
-    margin-bottom: 1rem !important;
+    margin-bottom: -3rem !important;
     line-height: 1.2rem !important;
-    font-family: "Avant Garde Gothic Medium";
+    font-family: "Avant Garde";
     font-style: normal;
     font-weight: normal;
-    width: 20rem !important;
+    width: 13rem !important;
     letter-spacing: 0rem !important;
     font-size: 1rem !important;
 }
 
 .margin-last {
-    margin-left: -11.5rem !important;
+    margin-left: -11rem !important;
 }
 
 .margin-last-3 {
@@ -230,6 +230,10 @@ font-family: Proxima Nova;
 
 @media(min-width: 768px) and (max-width: 1200px) {
 
+    .desktop_feel_free {
+        margin-bottom: -3rem !important;
+    }
+
     .font-last {
         letter-spacing: -0.2rem !important;
         padding-bottom: 3rem;
@@ -238,6 +242,11 @@ font-family: Proxima Nova;
         width: 41rem !important;
         max-width: 200rem !important;
         font-size: 3.2rem !important;
+    }
+
+    .margin-last {
+        margin-left: -11rem !important;
+        padding-bottom: 5.5rem !important;
     }
 
     .guillemet-last-3 {
@@ -253,7 +262,7 @@ font-family: Proxima Nova;
 
     .font-last-3 {
         letter-spacing: -0.2rem !important;
-        padding-bottom: 3rem;
+        padding-bottom: 5.5rem;
         line-height: 2.5rem !important;
         padding-left: 19rem ;
         width: 54rem !important;
@@ -269,15 +278,16 @@ font-family: Proxima Nova;
     }
 
     .testimonial_content b {
+        margin-top: -3.2rem !important;
         font-family: "Avant Garde" !important;
         font-weight: normal !important;
         color: #ef523d;
         display: block;
-        font-size: 3.1rem;
+        font-size: 7.1rem;
         left: 0;
         letter-spacing: -.05em;
         line-height: 84%;
-        margin-left: -0.8em;
+        margin-left: -0.05em;
         text-transform: uppercase;
         top: 0
     }
@@ -5355,8 +5365,8 @@ b {
     }
 
     .line3 {
-        margin-top: -2rem !important;
-        margin-bottom: -3rem !important;
+        margin-top: -1rem !important;
+        margin-bottom: -1rem !important;
         margin-left: 0rem;
         width: 75%;
     }
