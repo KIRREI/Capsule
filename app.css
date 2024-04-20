@@ -231,7 +231,7 @@ font-family: Proxima Nova;
 @media(min-width: 768px) and (max-width: 1200px) {
 
     .desktop_feel_free {
-        margin-bottom: -3rem !important;
+        margin-bottom: 2rem !important;
     }
 
     .font-last {
