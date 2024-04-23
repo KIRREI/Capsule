@@ -47,13 +47,16 @@
         }
 
         body, html {
+            overflow-y:  hidden!important;
             scroll-behavior: unset !important;
             overscroll-behavior-y: none !important;
         }
 
         /* Hide scrollbar for Chrome, Safari and Opera */
         body::-webkit-scrollbar {
-            display: none;
+            overflow: hidden !important;
+            background-color: transparent !important;
+            display: none !important;
         }
 
         /* Hide scrollbar for IE, Edge and Firefox */
@@ -81,7 +84,7 @@
 
     <link href="app.css" rel="stylesheet">
 </head>
-<body class="home" style="overflow: hidden">
+<body class="home" style="overflow-y: hidden">
 <div class="page-loading js-page-loading" style="position: fixed;
         top: 0;
         z-index: 99999999;
