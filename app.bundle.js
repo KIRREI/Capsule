@@ -5473,29 +5473,43 @@ headingElements.forEach(function(element) {
                         t
                 }
                 var Qi = Ji((function t() {
-                        var e = this;
-                        !function(t, e) {
-                            if (!(t instanceof e))
-                                throw new TypeError("Cannot call a class as a function")
-                        }(this, t),
-                            this.DOM = {
-                                videoPlayer: document.getElementById("hero-bg-video")
-                            };
-                        var i, n = this.DOM.videoPlayer.getAttribute("data-pc").toString(), r = this.DOM.videoPlayer.getAttribute("data-mobile").toString();
-                        this.urlVideoCurrent = null,
-                            (i = function() {
-                                    q() ? e.urlVideoCurrent = n : e.urlVideoCurrent = r,
-                                        e.DOM.videoPlayer.setAttribute("src", e.urlVideoCurrent),
-                                        e.DOM.videoPlayer.setAttribute("preload", "auto")
-                                }
-                            )(),
-                            D.on(h, i),
-                            Z.addClearEvent((function() {
-                                    D.off(h, i)
-                                }
-                            ))
+                    var e = this;
+                
+                    !function(t, e) {
+                        if (!(t instanceof e))
+                            throw new TypeError("Cannot call a class as a function")
+                    }(this, t);
+                
+                    this.DOM = {
+                        videoPlayer: document.getElementById("hero-bg-video")
+                    };
+                
+                    var pcVideoURL = e.DOM.videoPlayer.getAttribute("data-pc");
+                    var mobileVideoURL = e.DOM.videoPlayer.getAttribute("data-mobile");
+                
+                    // Fonction pour déterminer la taille de l'écran
+                    function isMobileScreen() {
+                        return window.innerWidth <= 767; // Condition pour les écrans mobiles
                     }
-                ));
+                
+                    // Fonction pour charger la vidéo appropriée en fonction de la taille de l'écran
+                    function loadVideo() {
+                        var videoURL = isMobileScreen() ? mobileVideoURL : pcVideoURL;
+                        e.DOM.videoPlayer.setAttribute("src", videoURL);
+                        e.DOM.videoPlayer.setAttribute("preload", "auto");
+                    }
+                
+                    // Charger la vidéo au chargement de la page
+                    loadVideo();
+                
+                    // Recharger la vidéo lorsque la taille de l'écran change
+                    window.addEventListener("resize", loadVideo);
+                
+                    // Libérer les écouteurs d'événements lors de la suppression de l'élément
+                    Z.addClearEvent(function() {
+                        window.removeEventListener("resize", loadVideo);
+                    });
+                }));
                 function $i(t) {
                     return $i = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                             return typeof t
